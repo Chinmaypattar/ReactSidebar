@@ -1,0 +1,19 @@
+@import '../../utils/global_colors.scss';
+
+
+.formBody{
+    margin: 0 11rem;
+}
+
+@media (max-width:768px) {
+    .formBody{
+        margin: 0px;
+    } 
+}
+
+.restaurant-buttons{
+    display: flex;
+    justify-content:flex-end;
+    width: 50% !important;
+    float: right;
+}

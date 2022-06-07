@@ -1,0 +1,50 @@
+@import '../../utils/global_colors.scss';
+
+.inputLabel{
+    text-align: left;
+    font-size: 16px;
+    float: left;
+    color:$mischka;
+    margin-bottom: .5rem !important;
+}
+
+.formInput{
+    background: $white;
+    padding-left: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    height: 4.5rem;
+    border: 1px solid $pattensBlue;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+    position: relative;
+}
+.form-control {
+    border-radius: 0;
+    font-family: "Poppins", sans-serif;
+    height: calc(2.25rem + 2px);
+    border: 1px solid $pattensBlue;
+    font-weight: 500;
+}
+.form-control,
+.form-control:hover {
+    box-shadow: none;
+    background: $grayShade1;
+    color: $black;
+}
+.form-control.active,
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid $slategray;
+    background: $grayShade1;
+    color: $black;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    float:left;
+}

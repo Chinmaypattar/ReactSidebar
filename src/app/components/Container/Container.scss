@@ -1,0 +1,26 @@
+@import '../../utils/global_colors.scss';
+
+.container-wrapper {
+    width: 100%;
+   margin-left: 270px;
+  }
+
+  .entry-container-wrapper {
+    width: 100%;
+   position: relative;
+
+  }
+  @media screen and (max-width: 768px) {
+    .container-wrapper {
+      margin-left: 0px !important;    
+    }
+    .entry-container-wrapper{
+      margin-left: 0px !important;   
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .page-wrapper {
+      display: flex;
+    }
+  }

@@ -1,0 +1,1 @@
+export const EXAMPLE_LOCAL_STORAGE = "";

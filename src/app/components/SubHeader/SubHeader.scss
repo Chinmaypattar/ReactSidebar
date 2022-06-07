@@ -1,0 +1,34 @@
+.main {
+  background-color: #ece8fd;
+  padding: 3px 19px;
+  $breadcrumb-divider: quote("-");
+  margin-bottom: 10px;
+  margin-left: -30px !important;
+  margin-right: -30px !important;
+  margin-top: 0px !important;
+  .divider {
+    --bs-breadcrumb-divider: "-";
+  }
+}
+.title1 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 0px !important;
+  color: #3b5998;
+}
+.title2 {
+  justify-content: right;
+  display: flex;
+}
+
+.bread-active{
+  color: #3b5998;
+  font-weight: 500;
+}
+.bread-inactive{
+  color: #abafb3;
+  font-weight: 500;
+  cursor: pointer;
+}

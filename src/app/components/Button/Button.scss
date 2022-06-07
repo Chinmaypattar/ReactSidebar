@@ -1,0 +1,60 @@
+@import '../../utils/global_colors.scss';
+
+
+.btn-primary {
+    background-color:$resolutionBlue !important;
+    border: 1px solid $resolutionBlue !important;
+}
+.btn-primary:hover {
+    color: $white;
+    background-color:$neonBlue !important;
+    border-color:$hanPurple !important;
+}
+.btn-primary.focus,
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem $mediumSlateBlue;
+}
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: $white;
+    background-color:$resolutionBlue;
+    border-color:$resolutionBlue;
+}
+// .btn-block {
+//     display: block;
+//     width: 15%;
+// }
+// .btn-block + .btn-block {
+//     margin-top: 0.5rem;
+// }
+
+// input[type="button"].btn-block,
+// input[type="reset"].btn-block,
+// input[type="submit"].btn-block {
+//     width: 15%;
+// }
+
+
+.btn-blur {
+    background: $whisper !important;
+    color: $darkGray;
+}
+.btn-blur:hover {
+    color: $white;
+}
+.btn-blur.focus,
+.btn-blur:focus {
+    box-shadow: 0 0 0 0.2rem $mediumSlateBlue;
+}
+.btn-blur.disabled,
+.btn-blur:disabled {
+    color: #fff;
+    background-color:$resolutionBlue;
+    border-color:$resolutionBlue;
+}
+
+.btn{
+    padding:7px 12px !important;
+    font-size: 14px !important;
+    margin:5px;
+}

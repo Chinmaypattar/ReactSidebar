@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
-import './Loader.scss';
+import React from 'react'
+import { Spinner } from 'react-bootstrap'
 
-export default class componentName extends Component {
-  render() {
-    return (
-<div id="ctn">
-<div id="loader"></div>
-</div>
-   );
-  }
+export default function Loader() {
+  return (
+    <div style={{margin:'auto'}}>
+         <Spinner animation="border" variant="success" />
+    </div>
+  )
 }

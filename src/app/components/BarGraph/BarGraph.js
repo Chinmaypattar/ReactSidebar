@@ -9,12 +9,12 @@ export default class BarGraph extends React.Component {
       series: [
         {
           name: "Inprogress",
-          data: [44, 55, 41, 67, 22],
+          data: [4, 5, 4, 2,2],
        
         },
         {
           name: "Completed",
-          data: [13, 23, 20, 8, 13]
+          data: [1, 2, 2, 4,3]
         },
       
       ],
@@ -22,8 +22,8 @@ export default class BarGraph extends React.Component {
         colors:['#EF8700', '#059100'],
         chart: {
           type: "bar",
-      
-        
+          fontFamily: 'Lato',
+          foreColor: 'white',
           stacked: true,
           toolbar: {
             show: true
@@ -32,13 +32,21 @@ export default class BarGraph extends React.Component {
             enabled: true
           }
         },
+        grid:{
+          show: false,
+         },
+        yaxis: {
+          min: 0,
+          max: 10,
+          tickAmount: 5
+      },
         responsive: [
           {
-            breakpoint: 480,
+            breakpoint: 580,
             options: {
               legend: {
                 position: "bottom",
-                offsetX: -10,
+                // offsetX: -10,
                 offsetY: 0,
                 labels:{
                   color:'white'
@@ -54,7 +62,7 @@ export default class BarGraph extends React.Component {
           }
         },
         xaxis: {
-          type: "string",
+        
           categories: [
             "Query",
             "Provisioning",
@@ -68,8 +76,8 @@ export default class BarGraph extends React.Component {
           }
         },
         legend: {
-          position: "right",
-          offsetY: 40,
+          position: "bottom",
+         
           
         },
         fill: {

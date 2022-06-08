@@ -7,19 +7,23 @@ export default class PieChart extends React.Component {
 
     this.state = {
     
-      series: [44, 55, 41],
+      series: [44, 55,10],
       options: {
+        colors:['#EF8700', '#059100','#9D9D9D'],
+        labels: ['Pending (6)', 'Available (3)', 'Disabled (1)'],
         chart: {
           type: 'donut',
           width:100,
-       
+          foreColor: 'white',
+          fontFamily: 'Lato',
+         
         },
         responsive: [{
-          breakpoint: 480,
+          breakpoint: 80,
           options: {
             chart: {
               width: 200,
-              height:800
+             
             },
             legend: {
               position: 'bottom'

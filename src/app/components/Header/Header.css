@@ -1,0 +1,184 @@
+
+.dp-wrapper {
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+}
+.dp-section {
+    display: flex;
+    padding: 0px;
+    width: 100%;
+	justify-content: space-between;
+}
+.dp-section-center {
+    display: flex;
+    width: 100%;
+}
+.dp-section-data {
+    display: block;
+    clear: both;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 100%;
+}
+.dp-sction-data-1 {
+	display: flex;
+}
+.dp-sction-data-2 {
+	display: flex;
+	justify-content: flex-end; 
+}
+#dp-section_content {
+    background-color: #000000;
+}
+
+.dp-header {
+    display: flex;
+	height: 54px;
+    width: 140px;
+}
+.dp-section-data-group-1 {
+	display: flex;
+	padding: 0px 0px 0px 15px;
+}
+.dp-section-data-group-2 {
+	display: flex;
+	padding: 0px 15px 0px 0px;
+}
+.dp-menu-icon {
+	display: flex;
+	width: 54px;
+	height: 54px;
+	background-image: url("../../assets/images/menu-icon.svg");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0px 8px 0px 0px;
+    cursor: pointer;
+}
+.dp-profile-icon {
+	display: flex;
+	width: 54px;
+	height: 54px;
+	background-image: url("../../assets/images/menu-icon.svg");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0px 8px 0px 0px;
+}
+.dp-logo {
+	display: flex;
+	height: 54px;
+	width: 140px;
+	background-image: url("../../assets/images/datapelago-logo-white.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.dp-breadcrumb {
+	display: flex;
+    color: #fff;
+    font-size: 1rem;
+	font-family: lato;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 0px 0px 24px;
+}
+.dp-user-name {
+	display: flex;
+    color: #fff;
+    font-size: 1rem;
+	font-family: lato;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 0px 0px 8px;
+}
+.dp-profile-icon {
+	display: flex;
+	width: 54px;
+	height: 54px;
+	background-image: url("../../assets/images/user-icon.svg");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0px 0px 0px 8px;
+}
+.dp-right-menu-icon {
+	display: none;
+	width: 54px;
+	height: 54px;
+	background-image: url("../../assets/images/right-menu1.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.dp-right-menu-icon:hover {
+	background-image: url("../../assets/images/right-menu2.png");
+}
+.dp-right-icon-group {
+	display: flex;
+}
+.dp-notification-icon {
+	display: flex;
+	width: 54px;
+	height: 54px;
+	background-image: url("../../assets/images/notification-icon.svg");
+	background-size: 55%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0px 0px 0px 8px;
+}
+.dp-date-time-marker {
+	display: flex;
+    color: #fff;
+    font-size: 1rem;
+    font-family: lato;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 900px) {
+.dp-right-icon-group {
+	display: none;
+}
+.dp-right-menu-icon {
+	display: flex;
+}
+.dp-logo {
+	display: flex;
+	height: 54px;
+	width: 54px;
+	background-image: url("../../assets/images/datapelago-logo.png");
+	background-size: 84%;
+}
+}
+@media only screen and (max-width: 390px) {
+.dp-section-data-group-1 {
+    padding: 0px 0px 0px 8px;
+}
+.dp-section-data-group-2 {
+	padding: 0px 8px 0px 0px;
+}
+	
+.dp-breadcrumb {
+	margin: 0px 0px 0px 10px;
+}
+.dp-menu-icon {
+    margin: 0px 4px 0px 0px;
+}
+	
+}
+@media only screen and (max-width: 375px) {
+.dp-section-data-group-1 {
+    padding: 0px 0px 0px 0px;
+}
+.dp-section-data-group-2 {
+	padding: 0px 0px 0px 0px;
+}
+	
+}

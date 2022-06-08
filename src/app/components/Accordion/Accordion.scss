@@ -1,6 +1,22 @@
 .accordion-wrapper{
-    background: #fff;
-    color: #464a53 !important;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: #3B3B3B !important;
+    border: 1px solid #212121 !important;
     border-radius: 0.25rem;
+}
+.accordion-button {
+    background-color: #3B3B3B !important;
+    border: 1px solid #212121 !important;
+    color: white !important;
+}
+.accordion-item:last-of-type .accordion-collapse {
+    background-color: #3B3B3B !important;
+    border: 1px solid #212121 !important;
+    color: white;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color:#212121 !important;
+    outline: 0;
+    box-shadow: unset !important;
 }

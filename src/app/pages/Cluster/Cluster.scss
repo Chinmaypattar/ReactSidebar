@@ -1,0 +1,37 @@
+.cluster-main{
+    .css-1ex1afd-MuiTableCell-root{
+        font-size: 12px;
+        padding: 2px !important;
+        color: #FFFFFF;
+
+    }
+    .css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active .MuiTableSortLabel-icon {
+        color: #ACACAC;
+    }
+    .MuiSvgIcon-root{
+        width: 0.8rem;
+        height: 0.8rem;
+        color: #ACACAC;
+    }
+    .Table{
+        .id{
+       color: #51A2FF !important;
+       cursor: pointer;
+        }
+        .id:hover{
+        text-decoration: underline;
+        }
+    }
+}
+
+.cluster-details{
+    p{
+        margin-bottom: 2px;
+        color: white;
+    }
+    .edit-btn{
+        background-color: #0066FF;
+         border-color: #0066FF;
+         color:'white'
+    }
+}

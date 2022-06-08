@@ -1,0 +1,332 @@
+
+  /* Works on Firefox */
+  
+  .dp-wrapper {
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+  }
+  .dp-section {
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+  }
+  .dp-section-center {
+    display: flex;
+    width: 100%;
+  }
+  .dp-section-data {
+    display: block;
+    clear: both;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .dp-sction-data-1 {
+    display: flex;
+  }
+  .dp-sction-data-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #dp-section_content {
+    background-color: #000000;
+  }
+  .dp-header {
+    display: flex;
+    height: 54px;
+    width: 140px;
+  }
+  .dp-section-data-group-1 {
+    display: flex;
+    padding: 0px 0px 0px 0px;
+  }
+  .dp-section-data-group-2 {
+    display: flex;
+    padding: 0px 15px 0px 0px;
+  }
+ 
+  
+  
+  .dp-breadcrumb {
+    display: flex;
+    color: #fff;
+    font-size: 1rem;
+    font-family: lato;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 24px;
+  }
+  .dp-user-name {
+    display: flex;
+    color: #fff;
+    font-size: 1rem;
+    font-family: lato;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 8px;
+  }
+
+  .dp-right-icon-group {
+    display: flex;
+  }
+
+  .dp-date-time-marker {
+    display: flex;
+    color: #fff;
+    font-size: 1rem;
+    font-family: lato;
+    justify-content: center;
+    align-items: center;
+  }
+  /*----------DASHBOARD CCS STARTS----------------------*/
+  .dp-section-dash-container {
+    display: flex;
+    width: 100%;
+    /*height: 100vh;*/
+    /*background-color: aqua;*/
+  }
+  .dp-section-left-nav {
+    display: flex;
+    width: 226px;
+    height: 100vh;
+    background-color: #3B3B3B;
+  }
+  .dp-section-dash-data-wraper {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    /*background-color: #6898e1;*/
+    padding-top: 10px;
+  }
+  .dp-dash-data-main-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* padding: 15px 15px 15px 15px; */
+  }
+  .dp-four-cards-container {
+    display: flex;
+    width: 100%;
+    /*height: 100vh;*/
+  }
+  .dp-cluster-jobs-admin-card-cont {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .dp-cluster-jobs-cont {
+    display: flex;
+    width: 100%;
+  }
+  .card {
+    display: flex;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid #212121 !important;
+    border-radius: 6px;
+    background-color: #3B3B3B !important;
+    flex-direction: column;
+  }
+  .card-heading {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: lato;
+    padding: 10px 10px 10px 10px;
+    color: #EEEEEE;
+  }
+  .dp-ref-image {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+  }
+  .dp-ref-image img {
+    width: 100%;
+  }
+  .dp-cluster-card {
+    display: flex;
+    width: 43% ;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 5px;
+  }
+  .dp-jobs-card {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 5px;
+  }
+  .dp-admin-cont {
+    display: flex;
+    width: 116% !important;
+  }
+  .dp-admin-card {
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    margin: 5px;
+  }
+  .dp-admin-prop-cont {
+    display: flex;
+    padding: 0px 0px 5px 0px;
+  }
+  .dp-table-cont {
+    width: 33.3%;
+    margin: 0px 5px 0px 5px;
+    color: #EEEEEE;
+  }
+  .dp-prop-table table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .dp-prop-table table th {
+    font-size: 0.8rem;
+  }
+  .dp-prop-table table tbody tr {
+    border-bottom: 1px solid #5a5a5a;
+  }
+  table tbody tr td {
+    padding: 2px;
+    font-size: 0.7rem;
+  }
+  .dp-prop-table table tbody tr:nth-child(1) {
+    border: #3b3b3b;
+  }
+  .dp-prop-table table tbody tr:last-child {
+    border: #3b3b3b;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .dp-notification-card-cont {
+    display: flex;
+    width: 30%;
+  }
+  .dp-notification-card {
+    /* display: flex; */
+    width: 100%;
+    /*position: relative;*/
+  }
+  .dp-notification-list-wrapper {
+    display: flex;
+    width: 96%;
+    position: relative;
+    height: 91%;
+    padding: 0% 0% 0% 2%;
+  }
+  .dp-notification-list-cont {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 16px);
+    overflow: auto;
+    position: absolute;
+    /* padding: 10px; */
+    width: 100%;
+  }
+  .input-search{
+    background-color:#3B3B3B ;
+    border: 1px solid #8D8D8D;
+    border-radius: 4px;
+    padding: .25rem 1rem;
+    margin-bottom: 2rem;
+  }
+  .dp-notification {
+    display: flex;
+    width: 96%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #EEEEEE;
+    margin: 10px 0px 0px 0px;
+    border-bottom: 1px solid #666;
+    padding: 0px 0px 6px 0px;
+  }
+.dp-notification p{
+text-align: left;
+margin-bottom: 1px;
+}
+  .dp-notification-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  .dp-notification-time, .dp-notification-details {
+    font-size: 0.8rem;
+    line-height: 19px;
+  }
+  .dp-bookmarks-cont {
+    padding-bottom: 25px;
+  }
+  /*----------DASHBOARD CCS ENDS----------------------*/
+  @media only screen and (max-width: 900px) {
+    .dp-right-icon-group {
+      display: none;
+    }
+    .dp-right-menu-icon {
+      display: flex;
+    }
+   
+  }
+  @media only screen and (max-width: 800px) {
+    .dp-four-cards-container {
+      flex-direction: column;
+    }
+    .dp-cluster-jobs-admin-card-cont {
+      width: 100%;
+    }
+    .dp-notification-card-cont {
+      width: 100%;
+      max-height: 400px;
+    }
+    .dp-notification-list-cont {
+      position: inherit;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .dp-cluster-jobs-cont {
+      flex-direction: column;
+    }
+    .dp-jobs-card {
+      width: auto;
+    }
+    .dp-cluster-card {
+      width: auto;
+    }
+    .dp-admin-prop-cont {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .dp-table-cont {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 390px) {
+    .dp-section-data-group-1 {
+      padding: 0px 0px 0px 8px;
+    }
+    .dp-section-data-group-2 {
+      padding: 0px 8px 0px 0px;
+    }
+    .dp-breadcrumb {
+      margin: 0px 0px 0px 10px;
+    }
+    .dp-menu-icon {
+      margin: 0px 4px 0px 0px;
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .dp-section-data-group-1 {
+      padding: 0px 0px 0px 0px;
+    }
+    .dp-section-data-group-2 {
+      padding: 0px 0px 0px 0px;
+    }
+  }

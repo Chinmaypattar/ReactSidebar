@@ -10,8 +10,8 @@ class AccordionComp extends Component {
         const {header,children}=this.props;
         return (
             <div class="accordion-wrapper">
-                <Accordion >
-                    <AccordionItem eventKey="0">
+                <Accordion>
+                    <AccordionItem  eventKey="0">
                         <AccordionHeader>{header}</AccordionHeader>
                         <AccordionBody>{children}</AccordionBody>
                     </AccordionItem>

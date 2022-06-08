@@ -5,6 +5,7 @@ import { routes } from "../../Router/routeConfig";
 import Header from "../Header/Header";
 import newLogo from "../../assets/logo/datapelago-logo-white.png";
 import "./Aside.scss";
+import HeaderNew from "../Header/HeaderNew";
 
 const Aside = ({
   image,
@@ -39,38 +40,10 @@ const Aside = ({
 
   return (
     <ProSidebar rtl={rtl} collapsed={collapsed} toggled={toggled} breakPoint="md" onToggle={handleToggleSidebar}>
-      {window.innerWidth > 768 ? (
-        <>
-          <Header title={heading} collapsed={collapsed} handleToggle={handleCollapsedChange} />
-          <SidebarHeader>
-            <div style={{ position: "fixed", marginLeft: "10px", marginTop: "5px" }} class="brand-logo ">
-              {/* <img
-                  src={newLogo}
-                  style={{
-                    height: "50px",
-                    width: "50px",
-                    marginLeft: "3px",
-                    marginBottom: "5px",
-                    marginTop: "6px",
-                  }}
-                  alt=""
-                />{" "} */}
-              <i onClick={handleCollapsedChange} className="bi bi-list hamburger"></i>
+      <div className="desktop">
+      <HeaderNew title={heading} collapsed={collapsed} handleToggle={handleCollapsedChange}/>
+        </div>
 
-              <span class="brand-title">
-                <img
-                  src={newLogo}
-                  alt=""
-                  style={{ height: "39px", width: "119px", marginTop: "-13px", marginLeft: "12px" }}
-                  className={collapsed ? "logoHidden" : "logoShow"}
-                />
-              </span>
-            </div>
-          </SidebarHeader>
-        </>
-      ) : (
-        ""
-      )}
       <SidebarContent>
         <Menu>
           {sidebardatafromRoute.map((item, index) => {

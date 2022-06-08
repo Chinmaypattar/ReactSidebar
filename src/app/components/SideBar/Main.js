@@ -1,16 +1,10 @@
 import React from "react";
-// import { useIntl } from 'react-intl';
-
-import { FaHeart, FaBars } from "react-icons/fa";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-// import reactLogo from './assets/logo.svg';
-import fostrrFav from "../../assets/logo/fav.png";
+import HeaderNew from "../Header/HeaderNew";
 const Main = (props) => {
   //   const intl = useIntl();
   return (
     <main style={{ padding: "0px", height: "100vh" }}>
-      {window.innerWidth < 768 ? (
+      {/* {window.innerWidth < 768 ? (
         <div className="header row">
           <div className="header-content ">
             <div
@@ -57,7 +51,8 @@ const Main = (props) => {
         </div>
       ) : (
         ""
-      )}
+      )} */}
+         <HeaderNew  handleToggle={()=>props.handleToggleSidebar(true)}/>
       {/* <Header /> */}
       <div class="content">{props.children}</div>
 

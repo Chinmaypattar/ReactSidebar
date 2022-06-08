@@ -1,0 +1,10 @@
+export const DASHBOARD_PATH ='/dashboard' 
+export const CLUSTER_PATH ='/cluster'
+export const CLUSTER_DETAILS_PATH ='/cluster/details'
+
+export const JOBS_PATH ='/jobs'
+export const TEANANT_PATH ='/teanant'
+export const ALL_RESOURCES_PATH ='/allresources'
+export const ROLES_PATH ='/roles'
+export const USER_PATH ='/users'
+export const DATA_SOURCES_PATH ='/datasources'

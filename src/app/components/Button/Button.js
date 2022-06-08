@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import "./Button.scss";
 
 const Button = (props) => {
-  const { isBlur, children, onPress } = props;
+  const { isBlur, children, onClick,colorClass,customClass,style } = props;
   return (
     // <div class="form-group">
     <button
-      class={isBlur ? "btn btn-blur btn-block" : "btn btn-primary btn-block"}
-      onClick={() => onPress()}
+    style={{style}}
+      className={ `btn btn-${colorClass} ${customClass} `}
+      onClick={() => onClick()}
     >
       {children}
     </button>

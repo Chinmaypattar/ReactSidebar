@@ -1,5 +1,6 @@
 import React from "react";
 import { BsBellFill, BsPersonCircle } from "react-icons/bs";
+import CurrentTime from "../CurrentTime/CurrentTime";
 import "./Header.scss";
 
 const Header = (props) => {
@@ -32,6 +33,10 @@ const Header = (props) => {
           {props.title}
         </div>
         <div className="right-header">
+          <div style={{marginTop:'20px',marginRight:'10px'}}>
+          <CurrentTime/>
+          </div>
+      
        <BsBellFill className="sideBar-icons icon-noti" />
 
          

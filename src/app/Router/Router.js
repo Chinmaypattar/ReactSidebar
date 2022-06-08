@@ -12,7 +12,17 @@ import Roles from "../pages/Administration/Roles/Roles";
 import Users from "../pages/Administration/Users/Users";
 import DataSources from "../pages/Administration/DataSources/DataSources";
 import ClusterDetails from "../pages/Cluster/ClusterDetails";
-import { ALL_RESOURCES_PATH, CLUSTER_DETAILS_PATH, CLUSTER_PATH, DASHBOARD_PATH, DATA_SOURCES_PATH, JOBS_PATH, ROLES_PATH, TEANANT_PATH, USER_PATH } from "./PathConst";
+import {
+  ALL_RESOURCES_PATH,
+  CLUSTER_DETAILS_PATH,
+  CLUSTER_PATH,
+  DASHBOARD_PATH,
+  DATA_SOURCES_PATH,
+  JOBS_PATH,
+  ROLES_PATH,
+  TEANANT_PATH,
+  USER_PATH,
+} from "./PathConst";
 export default class RouterMain extends Component {
   constructor(props) {
     super(props);
@@ -33,8 +43,11 @@ export default class RouterMain extends Component {
             <Route exact path={ROLES_PATH} component={Roles} />
             <Route exact path={USER_PATH} component={Users} />
             <Route exact path={DATA_SOURCES_PATH} component={DataSources} />
-            <Route exact path={`${CLUSTER_DETAILS_PATH}/:id`} component={ClusterDetails} />
-
+            <Route
+              exact
+              path={`${CLUSTER_DETAILS_PATH}/:id`}
+              component={ClusterDetails}
+            />
           </Switch>
         </Router>
       </div>

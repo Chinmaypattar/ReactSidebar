@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 
-import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarFooter, SidebarContent } from "react-pro-sidebar";
+import {
+  ProSidebar,
+  Menu,
+  MenuItem,
+  SubMenu,
+  SidebarHeader,
+  SidebarFooter,
+  SidebarContent,
+} from "react-pro-sidebar";
 import { routes } from "../../Router/routeConfig";
 import Header from "../Header/Header";
 import newLogo from "../../assets/logo/datapelago-logo-white.png";
@@ -16,17 +24,17 @@ const Aside = ({
   handleCollapsedChange,
   navigate,
   active,
-  heading
+  heading,
 }) => {
-  const sidebardatafromRoute = routes.filter(item => item.sideBarDetails);
+  const sidebardatafromRoute = routes.filter((item) => item.sideBarDetails);
   const [sidebardata, setDataChangeForSubmenu] = useState(sidebardatafromRoute);
   // console.log("DATA", sidebardata);
 
-  const onopenChange = element => {
+  const onopenChange = (element) => {
     // console.log("SUB MENU CLICKED", item);
     const data = sidebardata;
     console.log("SIDEBARDETAILS", data);
-    data.map(item => {
+    data.map((item) => {
       if (item.sideBarDetails.title === element.title) {
         console.log("COMING", element);
         item.sideBarDetails.isSubMenuOpen = true;
@@ -39,10 +47,20 @@ const Aside = ({
   };
 
   return (
-    <ProSidebar rtl={rtl} collapsed={collapsed} toggled={toggled} breakPoint="md" onToggle={handleToggleSidebar}>
+    <ProSidebar
+      rtl={rtl}
+      collapsed={collapsed}
+      toggled={toggled}
+      breakPoint="md"
+      onToggle={handleToggleSidebar}
+    >
       <div className="desktop">
-      <HeaderNew title={heading} collapsed={collapsed} handleToggle={handleCollapsedChange}/>
-        </div>
+        <Header
+          title={heading}
+          collapsed={collapsed}
+          handleToggle={handleCollapsedChange}
+        />
+      </div>
 
       <SidebarContent>
         <Menu>
@@ -51,7 +69,9 @@ const Aside = ({
               <MenuItem
                 icon={item.sideBarDetails.icon}
                 onClick={() => navigate(item.path)}
-                className={window.location.pathname === item.path ? "active" : "inactive"}
+                className={
+                  window.location.pathname === item.path ? "active" : "inactive"
+                }
               >
                 {item.sideBarDetails.title}
               </MenuItem>
@@ -66,7 +86,11 @@ const Aside = ({
                   return (
                     <MenuItem
                       onClick={() => navigate(submenuitem.path)}
-                      className={window.location.pathname === submenuitem.path ? "active" : "inactive"}
+                      className={
+                        window.location.pathname === submenuitem.path
+                          ? "active"
+                          : "inactive"
+                      }
                     >
                       {submenuitem.title}
                     </MenuItem>

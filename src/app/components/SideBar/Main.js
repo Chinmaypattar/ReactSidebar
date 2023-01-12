@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 import HeaderNew from "../Header/HeaderNew";
 const Main = (props) => {
   //   const intl = useIntl();
@@ -53,7 +54,8 @@ const Main = (props) => {
       ) : (
         ""
       )} */}
-      <HeaderNew handleToggle={() => props.handleToggleSidebar(true)} />
+      {/* <HeaderNew handleToggle={() => props.handleToggleSidebar(true)} /> */}
+      <Header handleToggle={() => props.handleToggleSidebar(true)} />
       {/* <Header /> */}
       <div class="content">{props.children}</div>
 

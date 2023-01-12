@@ -2,53 +2,63 @@
   // padding: 10px 0px 12px;
   // background-color: #093F7C;
   position: fixed;
-    top: 0px;
-    z-index: 5;
-    width: 100%;
-    
-   // position: fixed;
+  top: 0px;
+
+  width: 100%;
+  margin-left: 200px !important;
+
+  // position: fixed;
   .header-content {
     margin: 0 auto;
-    color:white;
+    color: white;
     display: flex;
     height: 60px;
-    justify-content: space-between;
-    .left-header{
+
+
+    .left-header {
       float: left;
       margin-left: 270px;
     }
-    .left-header-collapsed{
+
+    .left-header-collapsed {
       float: left;
       margin-left: 80px;
     }
-    .right-header{
-    float: right;
-    justify-content:end;
-    display: flex;
+
+    .right-header {
+      float: right;
+      justify-content: end;
+      display: flex;
+      margin-right: 200px;
+    }
+
+    .cursors {
+      cursor: pointer;
+    }
+
+    .drop {
+      display: flex;
+
+      align-items: center;
+      cursor: pointer;
+      margin-right: 15px;
+    }
   }
-  .cursors{
-    cursor: pointer;
-  }
-  .drop{
-    display: flex;
-  
-    align-items: center;
-    cursor: pointer;
-    margin-right: 15px;
-  }
-  }
-  .hamburger{
+
+  .hamburger {
     font-size: 30px;
   }
-  .arr{
+
+  .arr {
     font-size: 30px;
 
   }
 }
+
 @media screen and (max-width: 768px) {
   .header {
-  //  padding-top: 36px;
- //   padding-bottom: 24px;
+    //  padding-top: 36px;
+    //   padding-bottom: 24px;
   }
 }
 
@@ -59,6 +69,7 @@
     }
   }
 }
+
 .usnNo {
   font-size: 10px;
   color: white;
@@ -68,29 +79,34 @@
   padding-top: 7px;
   border-radius: 50px;
   margin-right: 10px;
-  margin-top: 16px;}
-.name{
+  margin-top: 16px;
+}
+
+.name {
   color: white;
   margin-top: 19px;
   margin-left: 4px;
   margin-right: 10px;
   font-size: 1rem;
 }
-.icon-noti{
+
+.icon-noti {
   color: #084FBA;
   margin-top: 23px !important;
   font-size: 18px;
   margin-right: 10px;
 }
+
 .loader {
   width: 23px;
   height: 23px;
   display: inline-block;
   position: relative;
 }
+
 .loader::after,
 .loader::before {
-  content: '';  
+  content: '';
   box-sizing: border-box;
   width: 23px;
   height: 23px;
@@ -101,27 +117,33 @@
   top: 8px;
   animation: animloader 2s linear infinite;
 }
+
 .loader::after {
   animation-delay: 1s;
 }
-.mr-15{
+
+.mr-15 {
   margin-right: 15px;
 }
+
 @keyframes animloader {
   0% {
     transform: scale(0);
     opacity: 1;
   }
+
   100% {
     transform: scale(1);
     opacity: 0;
   }
 }
+
 .header .header-content .left-header {
   float: left;
   margin-top: 14px;
-  margin-left: 199px;
+  margin-left: 0px;
 }
+
 .header .header-content .left-header-collapsed {
   float: left;
   margin-top: 14px;

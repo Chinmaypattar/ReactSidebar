@@ -12,6 +12,7 @@ import { routes } from "../../Router/routeConfig";
 import "./Aside.scss";
 import "./SideBar.scss";
 import HeaderNew from "../Header/HeaderNew";
+import Header from "../Header/Header";
 
 const Aside = ({
   image,
@@ -50,7 +51,14 @@ const Aside = ({
       onToggle={handleToggleSidebar}
     >
       <div className="desktop">
-        <HeaderNew
+        {/* <HeaderNew
+          crumbs={crumbs}
+          history={history}
+          title={heading}
+          collapsed={collapsed}
+          handleToggle={handleCollapsedChange}
+        /> */}
+        <Header
           crumbs={crumbs}
           history={history}
           title={heading}

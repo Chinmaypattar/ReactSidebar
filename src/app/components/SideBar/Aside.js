@@ -5,14 +5,12 @@ import {
   Menu,
   MenuItem,
   SubMenu,
-  SidebarHeader,
   SidebarFooter,
   SidebarContent,
 } from "react-pro-sidebar";
 import { routes } from "../../Router/routeConfig";
-import Header from "../Header/Header";
-import newLogo from "../../assets/logo/datapelago-logo-white.png";
 import "./Aside.scss";
+import "./SideBar.scss";
 import HeaderNew from "../Header/HeaderNew";
 
 const Aside = ({
@@ -25,25 +23,22 @@ const Aside = ({
   navigate,
   active,
   heading,
+  crumbs,
+  history,
 }) => {
   const sidebardatafromRoute = routes.filter((item) => item.sideBarDetails);
-  const [sidebardata, setDataChangeForSubmenu] = useState(sidebardatafromRoute);
-  // console.log("DATA", sidebardata);
+  const [sidebardata] = useState(sidebardatafromRoute);
 
   const onopenChange = (element) => {
-    // console.log("SUB MENU CLICKED", item);
+    console.log("admin clicked");
     const data = sidebardata;
-    console.log("SIDEBARDETAILS", data);
-    data.map((item) => {
+    data.forEach((item) => {
       if (item.sideBarDetails.title === element.title) {
-        console.log("COMING", element);
-        item.sideBarDetails.isSubMenuOpen = true;
+        item.sideBarDetails.isSubMenuOpen = !item.sideBarDetails.isSubMenuOpen;
       } else {
         item.sideBarDetails.isSubMenuOpen = false;
       }
     });
-    console.log("After change", data);
-    // setDataChangeForSubmenu()
   };
 
   return (
@@ -55,7 +50,9 @@ const Aside = ({
       onToggle={handleToggleSidebar}
     >
       <div className="desktop">
-        <Header
+        <HeaderNew
+          crumbs={crumbs}
+          history={history}
           title={heading}
           collapsed={collapsed}
           handleToggle={handleCollapsedChange}
@@ -67,27 +64,32 @@ const Aside = ({
           {sidebardatafromRoute.map((item, index) => {
             return !item.sideBarDetails.isSubMenu ? (
               <MenuItem
+                key={index}
                 icon={item.sideBarDetails.icon}
                 onClick={() => navigate(item.path)}
                 className={
-                  window.location.pathname === item.path ? "active" : "inactive"
+                  window.location.hash.includes(item.hashPath)
+                    ? "active"
+                    : "inactive"
                 }
               >
                 {item.sideBarDetails.title}
               </MenuItem>
             ) : (
               <SubMenu
+                key={index}
                 icon={item.sideBarDetails.icon}
                 title={item.sideBarDetails.title}
                 defaultOpen={item.sideBarDetails.isSubMenuOpen}
-                onClick={() => onopenChange(item.sideBarDetails)}
+                onOpenChange={() => onopenChange(item.sideBarDetails)}
               >
                 {item.sideBarDetails.subMenu.map((submenuitem, index) => {
                   return (
                     <MenuItem
+                      key={index}
                       onClick={() => navigate(submenuitem.path)}
                       className={
-                        window.location.pathname === submenuitem.path
+                        window.location.hash.includes(submenuitem.hashPath)
                           ? "active"
                           : "inactive"
                       }
